@@ -34,7 +34,7 @@ defaults: &defaults
     
     NOTIFY: 'scripts/github/add-commit-comment {project} {sha} "Created multidev environment [{site}#{env}]({dashboard-url})." {site-url}'
     ADMIN_USERNAME: admin
-    BUILD_TOOLS_VERSION: dev-master
+    # BUILD_TOOLS_VERSION: 2.0.0-beta6
     TERM: dumb
 
 version: 2
@@ -42,17 +42,17 @@ jobs:
     # @todo: common initialization, maybe
     build:
         <<: *defaults
+        # override the default image with drupaldocker/php as this job
+        # doesn't need Pantheon specific items such as Terminus that are
+        # in the quay.io/pantheon-public/build-tools-ci image
+        docker:
+            - image: drupaldocker/php:7.2-cli
         steps:
             - checkout
 
             - restore_cache:
                 keys:
                     - composer-cache
-                    - terminus-install
-
-            - run:
-                name: dependencies
-                command: ./.circleci/set-up-globals.sh
 
             - run:
                 name: install dev dependencies
@@ -63,12 +63,6 @@ jobs:
                 paths:
                     - $HOME/.composer/cache
 
-            - save_cache:
-                key: terminus-install
-                paths:
-                    - $HOME/.terminus
-                    - $HOME/terminus
-
             - persist_to_workspace:
                 # Must be relative path from working_directory
                 root: .
@@ -78,6 +72,11 @@ jobs:
 
     code_sniff_unit_test:
         <<: *defaults
+        # override the default image with drupaldocker/php as this job
+        # doesn't need Pantheon specific items such as Terminus that are
+        # in the quay.io/pantheon-public/build-tools-ci image
+        docker:
+            - image: drupaldocker/php:7.2-cli
         steps:
             - checkout
 
@@ -105,7 +104,6 @@ jobs:
             - restore_cache:
                 keys:
                     - composer-cache
-                    - terminus-install
 
             - run:
                 name: dependencies
@@ -117,7 +115,7 @@ jobs:
 
             - run:
                 name: deploy to Pantheon
-                command: ./.circleci/deploy-to-pantheon.sh
+                command: ./.ci/deploy-to-pantheon.sh
 
     behat_test:
         <<: *defaults
@@ -142,7 +140,12 @@ jobs:
 
             - run:
                 name: run Behat tests
-                command: ./.circleci/behat-test.sh
+                command: ./.ci/behat-test.sh
+
+            - run:
+                name: run Behat cleanup
+                command: ./.ci/behat-test-cleanup.sh
+                when: always
 
 workflows:
   version: 2
