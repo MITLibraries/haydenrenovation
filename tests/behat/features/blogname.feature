@@ -1,25 +1,22 @@
-Feature: Change blogname and blogdescription (no-js)
+Feature: Change blogname and blogdescription
   As a maintainer of the site
   I want to be able to change basic settings
   So that I have control over my site
 
-  Background:
-    Given I am logged in as an admin
+  Scenario: Saving blogname and blogdescription
+    Given I am logged in as an administrator
     Given I am on the dashboard
-
-
-  Scenario: Saving blogname
-    Given I go to menu item "Settings > General"
-    When I fill in "blogname" with "Awesome WordHat Test Site"
+    Then I should be logged in
+    When I go to the "Settings > General" menu
+    And I fill in "blogname" with "Awesome WordHat Test Site!"
+    And I fill in "blogdescription" with "Composer + CI + Pantheon is a win!"
     And I press "submit"
-    And I should see "Settings saved."
-    And I am on the homepage
-    Then I should see "Awesome WordHat Test Site" in the "h1 a" element
+    Then I should see "Settings saved."
 
-  Scenario: Saving blogdescription
-    Given I go to menu item "Settings > General"
-    When I fill in "blogdescription" with "GitHub + Composer + CircleCi + Pantheon = Win!"
-    And I press "submit"
-    And I should see "Settings saved."
-    And I am on the homepage
-    Then I should see "GitHub + Composer + CircleCi + Pantheon = Win!" in the ".site-description" element
+  Scenario: Verifying blogname and blogdescription
+    Given I am on the homepage
+    And the Pantheon cache has been cleared
+    Then I should be on the homepage
+    And I should not be logged in
+    And I should see "Awesome WordHat Test Site!" in the ".site-title > a" element
+    And I should see "Composer + CI + Pantheon is a win!" in the ".site-description" element
