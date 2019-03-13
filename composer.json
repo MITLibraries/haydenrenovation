@@ -1,5 +1,5 @@
 {
-  "name": "pantheon-systems/example-wordpress-composer",
+  "name": "mitlibraries/haydenrenovation",
   "description": "",
   "type": "project",
   "keywords": [],
@@ -16,28 +16,31 @@
   ],
   "require": {
     "composer/installers": "^1.3.0",
-    "pantheon-systems/quicksilver-pushback": "^1.0",
+    "pantheon-systems/quicksilver-pushback": "^1.0.1",
     "pantheon-systems/wordpress-composer": "^5.1",
     "roots/wp-password-bcrypt": "^1.0.0",
     "rvtraveller/qs-composer-installer": "^1.1",
-    "vlucas/phpdotenv": "^2.4.0",
+    "vlucas/phpdotenv": "^3.1.0",
     "wpackagist-plugin/jetpack": "7.1.1.1",
+    "wpackagist-plugin/lh-hsts": "^1.24",
     "wpackagist-plugin/mailchimp": "^1.5",
     "wpackagist-plugin/pantheon-advanced-page-cache": "^0.3.0",
     "wpackagist-plugin/wp-cfm": "^1.5",
     "wpackagist-plugin/wp-native-php-sessions": "^0.6.9",
     "wpackagist-theme/colinear": "^1.0",
+    "wpackagist-theme/twentynineteen": "^1.2",
     "wpackagist-theme/twentyseventeen": "^1.1"
   },
   "require-dev": {
+    "behat/mink-goutte-driver": "^1.2.1",
+    "brain/monkey": "^2.2.0",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+    "dmore/behat-chrome-extension": "^1.2",
+    "paulgibbs/behat-wordpress-extension": "^3.1.1",
+    "phpunit/phpunit": "^7.5.1",
     "roave/security-advisories": "dev-master",
-    "paulgibbs/behat-wordpress-extension": "0.8.0",
-    "behat/mink-goutte-driver": "^1.2",
-    "behat/mink-selenium2-driver": "^1.3",
-    "squizlabs/php_codesniffer": "^2.9.0",
-    "wp-coding-standards/wpcs": "dev-master",
-    "phpunit/phpunit": "^6.1",
-    "brain/monkey": "^1.4"
+    "squizlabs/php_codesniffer": "^3.4.0",
+    "wp-coding-standards/wpcs": "^1.2.1"
   },
   "config": {
     "vendor-dir": "vendor",
@@ -45,7 +48,7 @@
     "optimize-autoloader": true,
     "sort-packages": true,
     "platform": {
-      "php": "7.0"
+      "php": "7.2"
     }
   },
   "extra": {
@@ -65,7 +68,8 @@
   "autoload": {
     "classmap": [
       "scripts/composer/ScriptHandler.php"
-    ]
+    ],
+    "psr-4": { "PantheonSystems\\WordHatHelpers\\": "tests/behat/helper_classes/" }
   },
   "scripts": {
     "build-assets": [
@@ -89,8 +93,7 @@
       "WordPressProject\\composer\\ScriptHandler::createRequiredFiles"
     ],
     "code-sniff": [
-      "./vendor/bin/phpcs --config-set installed_paths ./vendor/wp-coding-standards/wpcs",
-      "./vendor/bin/phpcs ./web/wp-content"
+      "./vendor/bin/phpcs --standard=WordPress ./web/wp-content"
     ],
     "unit-test": [
       "./vendor/bin/phpunit tests/unit/*"
