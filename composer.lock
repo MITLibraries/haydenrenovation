@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb8787218f87b7c6085089ada62792db",
+    "content-hash": "0b12c871e1a069c661d2f57e7e253ff5",
     "packages": [
         {
             "name": "composer/installers",
@@ -449,15 +449,15 @@
         },
         {
             "name": "wpackagist-plugin/pantheon-advanced-page-cache",
-            "version": "0.1.5",
+            "version": "0.3.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/pantheon-advanced-page-cache/",
-                "reference": "tags/0.1.5"
+                "reference": "tags/0.3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/pantheon-advanced-page-cache.0.1.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/pantheon-advanced-page-cache.0.3.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -485,15 +485,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-native-php-sessions",
-            "version": "0.6.2",
+            "version": "0.6.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-native-php-sessions/",
-                "reference": "tags/0.6.2"
+                "reference": "tags/0.6.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-native-php-sessions.0.6.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-native-php-sessions.0.6.9.zip"
             },
             "require": {
                 "composer/installers": "~1.0"

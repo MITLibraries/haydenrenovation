@@ -25,9 +25,9 @@
     "wpackagist-plugin/amp": "^1.0",
     "wpackagist-plugin/jetpack": "7.1.1.1",
     "wpackagist-plugin/mailchimp": "^1.5",
-    "wpackagist-plugin/pantheon-advanced-page-cache": "^0.1.4",
+    "wpackagist-plugin/pantheon-advanced-page-cache": "^0.3.0",
     "wpackagist-plugin/wp-cfm": "^1.5",
-    "wpackagist-plugin/wp-native-php-sessions": "^0.6.0",
+    "wpackagist-plugin/wp-native-php-sessions": "^0.6.9",
     "wpackagist-theme/colinear": "^1.0",
     "wpackagist-theme/twentyseventeen": "^1.1"
   },
