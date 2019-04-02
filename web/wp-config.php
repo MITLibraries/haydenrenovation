@@ -192,7 +192,7 @@ $table_prefix = getenv( 'DB_PREFIX' ) !== false ? getenv( 'DB_PREFIX' ) : 'wp_';
 if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
   // Redirect to https://$primary_domain in the Live environment
   if ($_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
-    $primary_domain = 'haydenrenonews.mit.edu/';
+    $primary_domain = 'haydenrenonews.mit.edu';
   }
   else {
     // Redirect to HTTPS on every Pantheon environment.
