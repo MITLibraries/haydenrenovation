@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ba96316f2389db4b81609b24a71c5d9",
+    "content-hash": "d9860bdee238641a0a8ba29939434cdd",
     "packages": [
         {
             "name": "composer/installers",
@@ -595,24 +595,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-native-php-sessions/"
-        },
-        {
-            "name": "wpackagist-theme/colinear",
-            "version": "1.0.2",
-            "source": {
-                "type": "svn",
-                "url": "https://themes.svn.wordpress.org/colinear/",
-                "reference": "1.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/colinear.1.0.2.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/colinear/"
         },
         {
             "name": "wpackagist-theme/twentynineteen",
