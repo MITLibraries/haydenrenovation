@@ -43,6 +43,12 @@ define( 'FORCE_SSL_ADMIN', true );
  */
 define( 'WP_POST_REVISIONS', 3 );
 
+/**
+ * Disable Jetpack IDC mitigation
+ * @link https://developer.jetpack.com/hooks/jetpack_sync_idc_optin/
+ */
+define( 'JETPACK_SYNC_IDC_OPTIN' , false );
+
 /*
  * If NOT on Pantheon
  */
