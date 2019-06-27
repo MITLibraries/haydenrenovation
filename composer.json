@@ -28,7 +28,7 @@
     "wpackagist-plugin/wp-cfm": "^1.5",
     "wpackagist-plugin/wp-native-php-sessions": "^0.6.9",
     "wpackagist-theme/twentynineteen": "^1.2",
-    "wpackagist-theme/twentyseventeen": "^1.1"
+    "wpackagist-theme/twentyseventeen": "^2.1"
   },
   "require-dev": {
     "behat/mink-goutte-driver": "^1.2.1",
