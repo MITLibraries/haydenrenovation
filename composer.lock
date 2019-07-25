@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "903b1b48854e577f4e581f8dded44896",
+    "content-hash": "72200c5f79c556aa2836d448bb7baad6",
     "packages": [
         {
             "name": "composer/installers",
@@ -490,15 +490,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "7.5-beta-4",
+            "version": "7.5.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/7.5-beta-4"
+                "reference": "tags/7.5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.7.5-beta-4.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.7.5.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -580,15 +580,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-native-php-sessions",
-            "version": "0.6.9",
+            "version": "0.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-native-php-sessions/",
-                "reference": "tags/0.6.9"
+                "reference": "tags/0.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-native-php-sessions.0.6.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-native-php-sessions.0.7.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
