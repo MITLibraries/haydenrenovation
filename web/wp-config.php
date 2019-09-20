@@ -27,6 +27,16 @@ if ( ! isset( $_ENV['PANTHEON_ENVIRONMENT'] ) && file_exists( $rootPath . '/.env
 	) )->notEmpty();
 }
 
+/*
+ * Load secrets into array
+ */
+$secrets = array();
+$secrets_file = $_SERVER['HOME'] . '/files/private/secrets.json';
+if ( file_exists( $secrets_file ) ) {
+	$secrets_contents = file_get_contents( $secrets_file );
+	$secrets          = json_decode( $secrets_contents, true );
+}
+
 /**
  * Disallow on server file edits
  */
@@ -125,6 +135,16 @@ if ( isset( $_ENV['PANTHEON_ENVIRONMENT'] ) ):
 
 	/** The Database Collate type. Don't change this if in doubt. */
 	define( 'DB_COLLATE', '' );
+
+	/*
+	 * Sentry configuration
+	 */
+	if ( array_key_exists( 'SENTRY_DSN', $secrets ) ) {
+		define( 'WP_SENTRY_DSN', $secrets['SENTRY_DSN'] );
+		define( 'WP_SENTRY_ERROR_TYPES', E_ERROR & E_CORE_ERROR & E_COMPILE_ERROR );
+		define( 'WP_SENTRY_VERSION', 'v1' );
+		define( 'WP_SENTRY_ENV', $_ENV['PANTHEON_ENVIRONMENT'] );
+	}
 
 	/**#@+
 	 * Authentication Unique Keys and Salts.
