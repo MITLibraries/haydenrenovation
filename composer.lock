@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "06e4aeded5d12e865ad8834887d06592",
+    "content-hash": "6367cab5a9994dbaad74e29ec73cb08d",
     "packages": [
         {
             "name": "composer/installers",
@@ -502,15 +502,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "7.9.1",
+            "version": "8.1-beta",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/7.9.1"
+                "reference": "tags/8.1-beta"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.7.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.8.1-beta.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
