@@ -27,7 +27,7 @@
     "wpackagist-plugin/pantheon-advanced-page-cache": "^0.3.0",
     "wpackagist-plugin/wp-cfm": "^1.5",
     "wpackagist-plugin/wp-native-php-sessions": "^0.7.0",
-    "wpackagist-plugin/wp-sentry-integration": "^2.8",
+    "wpackagist-plugin/wp-sentry-integration": "^3.2",
     "wpackagist-theme/twentynineteen": "^1.2",
     "wpackagist-theme/twentyseventeen": "^2.1"
   },
