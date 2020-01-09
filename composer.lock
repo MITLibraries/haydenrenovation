@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe37e33eb897102b7df333d55480ca61",
+    "content-hash": "06e4aeded5d12e865ad8834887d06592",
     "packages": [
         {
             "name": "composer/installers",
@@ -592,15 +592,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-native-php-sessions",
-            "version": "0.7.0",
+            "version": "0.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-native-php-sessions/",
-                "reference": "tags/0.7.0"
+                "reference": "tags/0.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-native-php-sessions.0.7.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-native-php-sessions.0.9.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
