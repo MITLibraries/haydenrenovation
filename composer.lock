@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6367cab5a9994dbaad74e29ec73cb08d",
+    "content-hash": "177b7f694c6ade852359e6fb555155fc",
     "packages": [
         {
             "name": "composer/installers",
@@ -502,15 +502,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "8.1-beta",
+            "version": "8.3-beta1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/8.1-beta"
+                "reference": "tags/8.3-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.8.1-beta.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.8.3-beta1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -535,24 +535,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/lh-hsts/"
-        },
-        {
-            "name": "wpackagist-plugin/mailchimp",
-            "version": "1.5.7",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/mailchimp/",
-                "reference": "tags/1.5.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/mailchimp.1.5.7.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/mailchimp/"
         },
         {
             "name": "wpackagist-plugin/pantheon-advanced-page-cache",
@@ -610,15 +592,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-sentry-integration",
-            "version": "3.2.0",
+            "version": "3.3.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-sentry-integration/",
-                "reference": "tags/3.2.0"
+                "reference": "tags/3.3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-sentry-integration.3.2.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-sentry-integration.3.3.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -2023,6 +2005,7 @@
                 "extension",
                 "wordpress"
             ],
+            "abandoned": true,
             "time": "2019-06-24T19:27:08+00:00"
         },
         {
