@@ -502,15 +502,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "8.1-beta",
+            "version": "8.3-beta1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/8.1-beta"
+                "reference": "tags/8.3-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.8.1-beta.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.8.3-beta1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -2023,6 +2023,7 @@
                 "extension",
                 "wordpress"
             ],
+            "abandoned": true,
             "time": "2019-06-24T19:27:08+00:00"
         },
         {
