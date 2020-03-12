@@ -25,6 +25,7 @@
     "wpackagist-plugin/lh-hsts": "^1.24",
     "wpackagist-plugin/pantheon-advanced-page-cache": "^0.3.0",
     "wpackagist-plugin/wp-cfm": "^1.5",
+    "wpackagist-plugin/wp-mail-smtp": "^1.8",
     "wpackagist-plugin/wp-native-php-sessions": "^0.9.0",
     "wpackagist-plugin/wp-sentry-integration": "^3.2",
     "wpackagist-theme/twentynineteen": "^1.2",

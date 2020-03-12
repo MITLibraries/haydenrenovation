@@ -146,6 +146,11 @@ if ( isset( $_ENV['PANTHEON_ENVIRONMENT'] ) ):
 		define( 'WP_SENTRY_ENV', $_ENV['PANTHEON_ENVIRONMENT'] );
 	}
 
+	// WP_Mail_SMTP configuration.
+	define( 'WPMS_ON', true );
+	define( 'WPMS_SMTP_USER', $secrets['wpms_smtp_user'] );
+	define( 'WPMS_SMTP_PASS', $secrets['wpms_smtp_pass'] );
+
 	/**#@+
 	 * Authentication Unique Keys and Salts.
 	 *
