@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa5c466e72728bb28568b9e4a0c094f1",
+    "content-hash": "9179f4a9d04cf582d7974f324240a223",
     "packages": [
         {
             "name": "composer/installers",
@@ -203,16 +203,16 @@
         },
         {
             "name": "pantheon-systems/wordpress-composer",
-            "version": "5.3.2",
+            "version": "5.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/wordpress-composer.git",
-                "reference": "b44925dcc067897febb0a017d0011c67ab1f885a"
+                "reference": "c720696e36cb8cc3d69ee7f99184271da432d097"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/wordpress-composer/zipball/b44925dcc067897febb0a017d0011c67ab1f885a",
-                "reference": "b44925dcc067897febb0a017d0011c67ab1f885a",
+                "url": "https://api.github.com/repos/pantheon-systems/wordpress-composer/zipball/c720696e36cb8cc3d69ee7f99184271da432d097",
+                "reference": "c720696e36cb8cc3d69ee7f99184271da432d097",
                 "shasum": ""
             },
             "require": {
@@ -230,10 +230,10 @@
             ],
             "description": "WordPress for Pantheon with a composer.json file.",
             "support": {
-                "source": "https://github.com/pantheon-systems/wordpress-composer/tree/5.3.2",
+                "source": "https://github.com/pantheon-systems/wordpress-composer/tree/5.4.1",
                 "issues": "https://github.com/pantheon-systems/wordpress-composer/issues"
             },
-            "time": "2019-12-18T23:51:39+00:00"
+            "time": "2020-04-29T22:56:11+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -502,15 +502,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "8.3-beta1",
+            "version": "8.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/8.3-beta1"
+                "reference": "tags/8.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.8.3-beta1.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.8.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -538,15 +538,15 @@
         },
         {
             "name": "wpackagist-plugin/pantheon-advanced-page-cache",
-            "version": "0.3.1",
+            "version": "1.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/pantheon-advanced-page-cache/",
-                "reference": "tags/0.3.1"
+                "reference": "tags/1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/pantheon-advanced-page-cache.0.3.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/pantheon-advanced-page-cache.1.0.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -574,15 +574,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-mail-smtp",
-            "version": "1.8.1",
+            "version": "2.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
-                "reference": "tags/1.8.1"
+                "reference": "tags/2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.8.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.2.0.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -592,15 +592,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-native-php-sessions",
-            "version": "0.9.0",
+            "version": "1.1.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-native-php-sessions/",
-                "reference": "tags/0.9.0"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-native-php-sessions.0.9.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-native-php-sessions.zip?timestamp=1587680029"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -610,15 +610,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-sentry-integration",
-            "version": "3.3.0",
+            "version": "3.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-sentry-integration/",
-                "reference": "tags/3.3.0"
+                "reference": "tags/3.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-sentry-integration.3.3.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-sentry-integration.3.6.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -628,15 +628,15 @@
         },
         {
             "name": "wpackagist-theme/twentynineteen",
-            "version": "1.4",
+            "version": "1.5",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentynineteen/",
-                "reference": "1.4"
+                "reference": "1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentynineteen.1.4.zip"
+                "url": "https://downloads.wordpress.org/theme/twentynineteen.1.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -646,15 +646,15 @@
         },
         {
             "name": "wpackagist-theme/twentyseventeen",
-            "version": "2.2",
+            "version": "2.3",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentyseventeen/",
-                "reference": "2.2"
+                "reference": "2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyseventeen.2.2.zip"
+                "url": "https://downloads.wordpress.org/theme/twentyseventeen.2.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -2023,6 +2023,7 @@
                 "extension",
                 "wordpress"
             ],
+            "abandoned": true,
             "time": "2019-06-24T19:27:08+00:00"
         },
         {
@@ -5006,5 +5007,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.2"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }
